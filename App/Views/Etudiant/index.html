@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <h1>Welcome</h1>
+    {% for etudiant in etudiants %}
+    <br>{{etudiant.id}} - {{etudiant.nom}} - {{etudiant.age}}
+    {% endfor %}
+
+<br>
+
+    <a href="add">Ajouter</a>
+
+{% endblock %}
